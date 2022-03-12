@@ -143,5 +143,5 @@ To deploy the contracts, complete the following steps:
 12. Save file in the same location as the .env & .json files created in step 1. 
 13. Open Terminal and navigate to location of saved app.py, .env, and ABI.json file 
 14. In terminal run "Streamilt run app.py" 
-![streamlit](streamlit.jpeg)
+![streamlit](Streamlit.jpeg)
 15. Front end will be displayed in web browser
