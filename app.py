@@ -7,8 +7,6 @@ from pathlib import Path
 from dotenv import load_dotenv
 import streamlit as st
 
-from pinata import pin_file_to_ipfs, pin_json_to_ipfs, convert_data_to_json
-
 load_dotenv()
 
 def set_background_url():
@@ -31,9 +29,6 @@ def set_background_url():
          unsafe_allow_html=True
      )
 set_background_url()
-
-#Title = '<p style="font-family:Courier; color:Purple; font-size: 20px;">Testing if this works</p>'
-#st.markdown(Title, unsafe_allow_html=True)
 # Define and connect a new Web3 provider
 w3 = Web3(Web3.HTTPProvider(os.getenv("WEB3_PROVIDER_URI")))
 
@@ -64,8 +59,9 @@ def load_contract():
 # Load the contract
 contract = load_contract()
 
-#st.markdown('<p style=“color:blue">Enterprise Car Subscription Options</p>', unsafe_allow_html=True )
 from PIL import Image
+#Front End Display
+ #1. Creat a Title, Subscription Service Description, Subscription Benifits, How It Works
 
 image_4 = Image.open("logo-enterprise.jpeg")
 st.image(image_4, width=700)
@@ -79,15 +75,15 @@ st.title ("How it Works")
 st.write ("Step 1. Reserve - Login, select the vehicle you want and how long you'll need it. With our wallet you can reserve vehicles on-the-go. Step 2. Unlock and Go - Hold your wallet token over the windshield sensor to unlock the vehicle, the keys will be waiting for you inside. Step 3. Return - Return the vehicle at the end of your reservation. Hold your wallet token over the reader one last time, the doors will lock and your rental has ended.")
 st.markdown("---")
 
-
+# Input Wallet Address 
 st.title("Input your Etherium Wallet Account")
 accounts = w3.eth.accounts
 address = st.selectbox("Input Account", options=accounts)
 
 st.markdown("---")
 
-st.title("Economy")
-st.title("Price: 300 Eth")
+# Decription of Economy Token
+st.title("Price: 3.51 Eth")
 if st.button ("Detials of Package 1"):
         st.markdown("The standard subscription service offered. Access to Compact Cars through Standard SUVs. No upgrades avalaible")  
 
@@ -102,8 +98,9 @@ st.image(image_1, width=400)
 
 st.markdown("---")  
 
+# Decription of Full Size Token
 st.title("Full Size")
-st.title("Price: 500 Eth")
+st.title("Price: 4.07 Eth")
 if st.button ("Detials of Package 2"):
         st.markdown("The Upgraded from tear 1 subscription offering services of...")  
 if st.button ("Purchase Package 2"):
@@ -117,11 +114,12 @@ st.image(image_2, width=400)
 
 st.markdown("---")  
 
-st.title("luxury")
-st.title("Price: 500 Eth")
+#Decription of Luxury Token
+st.title("Luxury")
+st.title("Price: 4.39 Eth")
 if st.button ("Detials of Package 3"):
 
-        st.markdown("ully comprehensive, insurance Re")  
+        st.markdown("Fully comprehensive, insurance Re")  
 if st.button ("Purchase Package 3"):
     st.markdown("Congradulations On Your Subscription!")  
     st.balloons()

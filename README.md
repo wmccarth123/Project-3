@@ -18,7 +18,7 @@ This analysis included the following steps:
 4. Analyze Pennsylvania Census Data to consider marketing plan for the tokenized subscription service.
 
 
-### Step 1: Code the XP_Token. XP_TokenCrowdsale, and XP_TokenCrowdsaleDeployer Contracts
+### Step 1:Code the XP_Token. XP_TokenCrowdsale, and XP_TokenCrowdsaleDeployer Contracts
 
 1. Inside the `XPTokenMintable.sol` file, find the code that creates the `XP_Token` contract. Remove the `mint` function from the main body of the constructor. (The `XP_TokenCrowdsale` contract will handle this functionality.)
 
@@ -90,17 +90,17 @@ This analysis included the following steps:
     token.renounceMinter();
     ```
 
-    > **Note** When you set your token as `ERC20Mintable`, `msg.sender` (the person or contract that does the deployment) automatically gets set as the default minter. Because `XP_TokenCrowdsaleDeployer` is `msg.sender` in this case, this step ensures that `XP_TokenCrowdsale` becomes the minter.
-
 9. In the Remix IDE, navigate to the **Solidity compiler** pane.
 
 10. In the Compiler drop-down list, select any version from 0.5.0 to 0.5.17. Compile both the `XPTokenMintable.sol` and `XPTokenCrowdsale.sol` files. Check for any errors, and debug them as needed.
+
+11. Copy the ABI of the `XPTokenCrowdsale.sol` to a seperate .json file 
 
 ### Deploy the XP_Token Crowdsale
 
 In this section, you’ll deploy the `XP_TokenCrowdsaleDeployer`, `XP_TokenCrowdsale`, and `XP_Token` contracts.
 
-Before deploying the contracts, make sure that you’ve launched Ganache and loaded at least three accounts into Remix.
+Before deploying the contracts, make sure that you’ve launched Ganache and loaded 1 accounts into Remix and load the WEB3_PROVIDER_URI into the .env file.
 
 To deploy the contracts, complete the following steps:
 
@@ -114,18 +114,34 @@ To deploy the contracts, complete the following steps:
 
     * Click **transact**, and when the MetaMask dialog box opens, confirm the transaction.
 
-2. Navigate to the Deployed Contracts section, and then open the box that’s associated with the `XP_TokenCrowdsaleDeployer` contract. Notice that buttons for `xp_crowdsale_address` and `xp_token_address` now appear.
+2. Copy the smart contract address = SMART_CONTRACT_ADDRESS into a .env file
 
-3. Link the contract that’s associated with `xp_crowdsale_address` to the `XP_TokenCrowdsale` contract that you previously created by completing the following steps:
+### 2. Design front end Display in a app.py file 
 
-    * Copy the address that’s associated with `xp_crowdsale_address`.
+1. Load Imports 
 
-    * Scroll up to the Contract box, and then select the compiled `XP_TokenCrowdsale`.
+![imports](imports.jpeg)
 
-    * Copy the address into the **At Address** box.
+2. Set background using the set_background_url() function
 
-    * Click the **At Address** button.
+3. Define and connect a new Web3 provider 
 
-4. Notice the deployed `XP_TokenCrowdsale` contract in the Deployed Contracts section.
+4. Load contracts
+    
+    * Load the contract ABI
+    * Set the contract address (this is the address of the deployed contract)
+    * Get the contract
 
-5. Repeat Steps 1&ndash;4 with `xp_token_address` and the `XP_Token` contract.
+5. Front End Display
+6. Load in Enterprise Logo 
+7. Creat a Title, Subscription Service Description, Subscription Benifits, How It Works
+8. Input Wallet Address 
+    * Using "accounts = w3.eth.accounts" create area for customers to input thier wallet address to exchange ETH for our tokens 
+9. Decription of Economy Token
+10. Decription of Full Size Token
+11. Decription of Luxury Token
+12. Save file in the same location as the .env & .json files created in step 1. 
+13. Open Terminal and navigate to location of saved app.py, .env, and ABI.json file 
+14. In terminal run "Streamilt run app.py" 
+![streamlit](streamlit.jpeg)
+15. Front end will be displayed in web browser
