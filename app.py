@@ -69,7 +69,7 @@ st.title("Enterprice Car Subscription")
 st.write ("Our car subscription service is the solution for those who want more flexibility than you get with car leasing. Instead of investing money in new cars that go down in value, save your money for vacations or other expenses. It’s also hard to know if you will want to drive the same car in 1, 2 or even 5 years, so it’s better to stay flexible. With our tokenized car subscription you can be a worry-free part of your life, just like your streaming service or a gym membership! With an all-inclusive car subscription service, you have mobility with no fuss at a fixed price. Get a car immediately and keep it for as long as you want!")
 
 st.title ("Subscription Benifits")
-st.write ("Call and reserve the vehicle you want from a range of sedans, SUVs and pickup trucks. Insurance, maintenance and roadside assistance are covered. Access to diverse, extensive fleet in 90+ countries and territories. Access to Emerald Aisle, Emerald Alerts, and status match. ")
+st.write ("Depending on level of subscription a subscriber has the choice of over 100+ cars from compact cars to luxury sports cars. We offer a full factory warranty, annual inspections, no fees for accidents, and full roadside assistance  ")
 
 st.title ("How it Works")
 st.write ("Step 1. Reserve - Login, select the vehicle you want and how long you'll need it. With our wallet you can reserve vehicles on-the-go. Step 2. Unlock and Go - Hold your wallet token over the windshield sensor to unlock the vehicle, the keys will be waiting for you inside. Step 3. Return - Return the vehicle at the end of your reservation. Hold your wallet token over the reader one last time, the doors will lock and your rental has ended.")
@@ -83,9 +83,10 @@ address = st.selectbox("Input Account", options=accounts)
 st.markdown("---")
 
 # Decription of Economy Token
+st.title("Economy")
 st.title("Price: 3.51 Eth")
 if st.button ("Detials of Package 1"):
-        st.markdown("The standard subscription service offered. Access to Compact Cars through Standard SUVs. No upgrades avalaible")  
+        st.markdown("The standard subscription service offered. Access to Sedans, Mid Size SUVs, Mid Size Pickup Trucks")  
 
 if st.button ("Purchase Package 1"):
     st.markdown("Congradulations On Your Subscription!") 
@@ -102,7 +103,7 @@ st.markdown("---")
 st.title("Full Size")
 st.title("Price: 4.07 Eth")
 if st.button ("Detials of Package 2"):
-        st.markdown("The Upgraded from tear 1 subscription offering services of...")  
+        st.markdown("The Upgraded from tear 1 subscription offering services of High end SUVs, Electric, Mini Vans, Trucks")  
 if st.button ("Purchase Package 2"):
       st.markdown("Congradulations On Your Subscription!")
       st.balloons()  
@@ -119,7 +120,7 @@ st.title("Luxury")
 st.title("Price: 4.39 Eth")
 if st.button ("Detials of Package 3"):
 
-        st.markdown("Fully comprehensive, insurance Re")  
+        st.markdown("The highest level subscription offering services of Luxury Sports Cars, Black car ")  
 if st.button ("Purchase Package 3"):
     st.markdown("Congradulations On Your Subscription!")  
     st.balloons()

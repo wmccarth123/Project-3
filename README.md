@@ -1,5 +1,9 @@
 # Project-3
 
+Presentation link:
+
+https://docs.google.com/presentation/d/1h0pZK-jXZjNnL0XjGncY-2LptL8qETUH/edit?usp=sharing&ouid=106684414815156550820&rtpof=true&sd=true
+
 ## Our Task: 
 
 We are a new project team within Enterprise rent a car tasked with trying exploring ways to utilize tokens in order to drive growth in our subscription service. Our strategy will be to create three classes of tokens signifying different levels of subscription for standard, upgraded, and premium. Then create a book of service offerings for each class of token. Finally, we are to develop a marketing strategy for these products within the Philadelphia test market.
