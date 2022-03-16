@@ -4,7 +4,9 @@ Presentation link:
 
 https://docs.google.com/presentation/d/1h0pZK-jXZjNnL0XjGncY-2LptL8qETUH/edit?usp=sharing&ouid=106684414815156550820&rtpof=true&sd=true
 
-## Our Task: 
+---
+
+## Our Task
 
 We are a new project team within Enterprise rent a car tasked with trying exploring ways to utilize tokens in order to drive growth in our subscription service. Our strategy will be to create three classes of tokens signifying different levels of subscription for standard, upgraded, and premium. Then create a book of service offerings for each class of token. Finally, we are to develop a marketing strategy for these products within the Philadelphia test market.
 
@@ -19,10 +21,15 @@ This analysis included the following steps:
     * Connect to XP_TokenCrowdsale by importing the SMART_CONTRACT_ADDRESS, WEB3_PROVIDER_URI, and .json file 
     * Code front end display 
     * Run Streamlit on computer terminal to display finalized from end 
-4. Analyze Pennsylvania Census Data to consider marketing plan for the tokenized subscription service.
+3. Gather and analyze Philadelphia market data in order to develop a successful marketing strategy
+4. Results, Conclusions, & Next Steps 
 
+---
 
-### Step 1:Code the XP_Token. XP_TokenCrowdsale, and XP_TokenCrowdsaleDeployer Contracts
+### Part 1:Code the XP_Token. XP_TokenCrowdsale, and XP_TokenCrowdsaleDeployer Contracts
+
+Location: XPTokenMintable.sol & XPTokenCrowdsale.sol
+Please note that the starter code & instructions are sourced from class activity 04-Stu_XP_Token_Crowdsale
 
 1. Inside the `XPTokenMintable.sol` file, find the code that creates the `XP_Token` contract. Remove the `mint` function from the main body of the constructor. (The `XP_TokenCrowdsale` contract will handle this functionality.)
 
@@ -100,7 +107,9 @@ This analysis included the following steps:
 
 11. Copy the ABI of the `XPTokenCrowdsale.sol` to a seperate .json file 
 
-### Deploy the XP_Token Crowdsale
+---
+
+### Step 2: Deploy the XP_Token Crowdsale
 
 In this section, you’ll deploy the `XP_TokenCrowdsaleDeployer`, `XP_TokenCrowdsale`, and `XP_Token` contracts.
 
@@ -120,7 +129,11 @@ To deploy the contracts, complete the following steps:
 
 2. Copy the smart contract address = SMART_CONTRACT_ADDRESS into a .env file
 
-### 2. Design front end Display in a app.py file 
+---
+
+### Part 3: Design front end Display in a app.py file 
+
+Location: app.py
 
 1. Load Imports 
 
@@ -149,3 +162,68 @@ To deploy the contracts, complete the following steps:
 14. In terminal run "Streamilt run app.py" 
 ![streamlit](Streamlit.jpeg)
 15. Front end will be displayed in web browser
+![Browser1](Browser1.jpeg) 
+![Browser2](Browser2.jpeg)
+![Browser3](Browser3.jpeg)
+
+---
+
+### Gather and Analyze Philadelphia Market Data in Order to Develop a Successful Marketing Strategy
+
+Location: PA Household Income by City.ipynb
+
+1. Import Libraries & Depencencies, Load .env variables, Set alpaca key and Secret key
+2. Loadin in Census Data sourced from Kaggle
+3. Creat a Mapbox Plot to visulatize the Market Data.
+![AM](Ardmore.jpeg)
+
+Location: enterprise_locations_philly.ipynb.
+
+1. Creat Dataframe of enterprise loactions
+2. Import googlemaps and convert addresses to latitude and longitude points 
+3. Define the airport address 
+4. load imports for mapp 
+5. Use matplotlib to create a chart of enterprise locations relative to the Philadelphia airport
+
+![EM](enterprisemap.jpeg)
+
+Test Market Justification: 
+
+Given the area’s proximity to a major international airport Philadelphia is an idea market to test our service in 
+1. The surrounding area contains a wide variety of customers. As well as a concentration of our target customers in center city and the surrounding affluent suburbs 
+2. Philadelphia is a major hub for business travel. this presents an opportunity to market as the premier business car rental partner or  as a potential fleet replacement service
+---
+
+Marketing Strategy 
+
+Marketing to millennials and Gen Z
+Seven out of ten millennials and GenZ’ers want their image to represent the “real me”*
+Transparency of what/why we’re offering
+No hidden fees
+“The car rental industry is witnessing massive growth mainly because of the increase in the disposable income of consumers followed by the influence of high standard of living and spending more on luxury vehicles for travel” 
+
+They’re digital natives
+we’re going to target social media
+
+Humanize the brand
+“Almost half of millennials and GenZ’ers like to know the backstory or brands and products”* 
+Make the message short, to the point, and in their language 
+
+
+---
+
+Results & Conclusions
+
+High car demand
+Low car ownership in millennials
+Ease of access
+Rental car industry has had rapid growth due to rise in urban population and tourism
+“Offer more effective and efficient services to customers in the future, car rental companies are looking forward to car rental management software, as it helps in minimizing repetitive tasks and exhibit concentration on developing new business models and strategies”* 
+Increasing implementation of rental car management software offer huge opportunities in the forecast period
+
+----
+
+Next Steps 
+
+
+
