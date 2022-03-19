@@ -222,7 +222,7 @@ Results & Conclusions
 
 * Pride in ownership is transferred to the token rather than the car. Our tokens are the status symbol in this relationship and access to car is one of the benefits of having the status
 
-With these disruptions to the car subscription markwt we believe this strategy will grow Enterprise's subscriber base. 
+With these disruptions to the car subscription market we believe this strategy will grow Enterprise's subscriber base. 
 
 ----
 
