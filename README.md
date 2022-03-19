@@ -214,16 +214,25 @@ Make the message short, to the point, and in their language
 
 Results & Conclusions
 
-High car demand
-Low car ownership in millennials
-Ease of access
-Rental car industry has had rapid growth due to rise in urban population and tourism
+* High car demand
+* Low car ownership in millennials
+* Ease of access
+* Rental car industry has had rapid growth due to rise in urban population and tourism
 “Offer more effective and efficient services to customers in the future, car rental companies are looking forward to car rental management software, as it helps in minimizing repetitive tasks and exhibit concentration on developing new business models and strategies”* 
-Increasing implementation of rental car management software offer huge opportunities in the forecast period
+* Increasing implementation of rental car management software offer huge opportunities in the forecast period
 
 ----
 
 Next Steps 
+
+With additional time and resources we could: 
+
+* Design a better user interface 
+* Create our own exchange or digital currency 
+* Launching a series of NFTs 
+* A connection to Opensea as a secondary market for NFT trades
+* NFT can earn you a vehicle in the metaverse as Enterprise tries to expand their market share and partner with Decentraland
+* Would be able to lease the vehicle to other users in the metaverse 
 
 
 
