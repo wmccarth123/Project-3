@@ -214,16 +214,15 @@ Make the message short, to the point, and in their language
 
 Results & Conclusions
 
-* High car demand
+* Enterprise maintains an excellent value proposition for customers. Leveraging this our team intends to pair the enterprise brand with digital assets in or to facilitate a unique customer experience for its subscription service. This will build a strong base customer group to expand upon.
 
-* Low car ownership in millennials
+* Unlike other subscription services we are not providing personal vehicle ownership. Our digital assets are the item customers own. The token takes the place of the cars as a status symbol to feel personal ownership of.  
 
-* Ease of access
+* Millenials and Gen Z are not investing in personal ownership of cars at the rate of previous generations. These consumers are looking for alternative ways to create value for their investments.  Enterprise can provide consumers tangible value to a digital asset investment that do not depreciate in value as physical cars do. 
 
-* Rental car industry has had rapid growth due to rise in urban population and tourism
-“Offer more effective and efficient services to customers in the future, car rental companies are looking forward to car rental management software, as it helps in minimizing repetitive tasks and exhibit concentration on developing new business models and strategies”
+* Pride in ownership is transferred to the token rather than the car. Our tokens are the status symbol in this relationship and access to car is one of the benefits of having the status
 
-* Increasing implementation of rental car management software offer huge opportunities in the forecast period
+With these disruptions to the car subscription markwt we believe this strategy will grow Enterprise's subscriber base. 
 
 ----
 
